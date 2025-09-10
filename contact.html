@@ -7,6 +7,10 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 
+      textarea {
+        resize: none;
+      }
+
       @font-face {
         font-family: "The Seasons";
         src: url("./assets/fonts/theseasons-reg.otf") format("opentype");
@@ -285,12 +289,11 @@
         gap: 1rem;
         margin-bottom: 1rem;
         color: var(--navy-dark);
-        font-weight: 500;
       }
 
       .contact-item span:first-child {
         min-width: 120px;
-        color: var(--text-gray);
+        color: var(--navy-dark);
         font-weight: normal;
       }
 
@@ -302,7 +305,7 @@
         background: var(--white);
         padding: 3rem;
         border-radius: 15px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid #b7b7b7;
       }
 
       .contact-form h3 {
@@ -326,7 +329,7 @@
       .form-group textarea {
         width: 100%;
         padding: 0.75rem 1rem;
-        border: 2px solid #e2e8f0;
+        border: 1px solid #b7b7b7;
         border-radius: 8px;
         background: var(--white);
         color: var(--navy-dark);
@@ -511,14 +514,6 @@
                 <div
                   style="display: flex; align-items: flex-start; gap: 0.75rem"
                 >
-                  <span
-                    style="
-                      color: var(--accent-gold);
-                      font-size: 1.2rem;
-                      margin-top: 0.2rem;
-                    "
-                    >✓</span
-                  >
                   <div>
                     <strong style="color: var(--navy-dark)"
                       >Expert Instructors</strong
@@ -538,14 +533,6 @@
                 <div
                   style="display: flex; align-items: flex-start; gap: 0.75rem"
                 >
-                  <span
-                    style="
-                      color: var(--accent-gold);
-                      font-size: 1.2rem;
-                      margin-top: 0.2rem;
-                    "
-                    >✓</span
-                  >
                   <div>
                     <strong style="color: var(--navy-dark)"
                       >Flexible Learning</strong
@@ -564,14 +551,6 @@
                 <div
                   style="display: flex; align-items: flex-start; gap: 0.75rem"
                 >
-                  <span
-                    style="
-                      color: var(--accent-gold);
-                      font-size: 1.2rem;
-                      margin-top: 0.2rem;
-                    "
-                    >✓</span
-                  >
                   <div>
                     <strong style="color: var(--navy-dark)"
                       >Hands-on Projects</strong
@@ -590,14 +569,6 @@
                 <div
                   style="display: flex; align-items: flex-start; gap: 0.75rem"
                 >
-                  <span
-                    style="
-                      color: var(--accent-gold);
-                      font-size: 1.2rem;
-                      margin-top: 0.2rem;
-                    "
-                    >✓</span
-                  >
                   <div>
                     <strong style="color: var(--navy-dark)"
                       >Community Support</strong
@@ -653,7 +624,7 @@
               <textarea
                 id="message"
                 name="message"
-                rows="2"
+                rows="3"
                 placeholder="Tell us about your learning goals..."
               ></textarea>
             </div>
