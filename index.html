@@ -702,7 +702,7 @@
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#programs" class="nav-link">Programs</a></li>
           <li><a href="#team" class="nav-link">Our Team</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
         <button class="mobile-menu-toggle" id="mobileToggle">
           <span>☰</span>
@@ -972,9 +972,29 @@
           Ready to start your learning journey? We would love to hear from you.
         </p>
 
-        <div class="contact-content">
-          <div class="contact-info">
+        <div
+          class="contact-content"
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 3rem;
+          "
+        >
+          <div class="contact-info" style="max-width: 600px">
             <h3>Contact Information</h3>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.9);
+                font-size: 1.1rem;
+                margin-bottom: 2rem;
+              "
+            >
+              Whether you have questions about our programs, want to learn more
+              about our approach, or are ready to get started, we'd love to
+              connect with you.
+            </p>
             <div class="contact-item">
               <span>Email:</span>
               <span>hello@edunautics.com</span>
@@ -993,49 +1013,17 @@
             </div>
           </div>
 
-          <form class="contact-form">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your full name"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="your.email@example.com"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="interest">Area of Interest</label>
-              <input
-                type="text"
-                id="interest"
-                name="interest"
-                placeholder="e.g., AI, Data Science, STEM"
-              />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Tell us about your learning goals..."
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width: 100%">
-              Send Message
-            </button>
-          </form>
+          <div
+            style="
+              display: flex;
+              gap: 1rem;
+              flex-wrap: wrap;
+              justify-content: center;
+            "
+          >
+            <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            <a href="#programs" class="btn btn-secondary">View Programs</a>
+          </div>
         </div>
       </div>
     </section>
@@ -1085,15 +1073,7 @@
         }
       });
 
-      // Form submission
-      document
-        .querySelector(".contact-form")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          // Here you would typically send the form data to a server
-          alert("Thank you for your message! We'll get back to you soon.");
-          this.reset();
-        });
+      // Form submission - removed since contact form is now on separate page
 
       // Team Carousel functionality with drag/swipe support
       let currentSlide = 0;
