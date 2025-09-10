@@ -219,6 +219,7 @@
         transition: all 0.3s ease;
         cursor: pointer;
         width: 200px;
+        text-align: center;
       }
 
       .btn-primary {
@@ -245,7 +246,6 @@
       /* Section Styles */
       .section {
         padding: 5rem 2rem;
-        min-height: 100vh;
         min-height: 100vh;
       }
 
@@ -299,7 +299,7 @@
         background: var(--white);
         padding: 2.4rem;
         border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: 1px solid #b7b7b7;
         border-left: 4px solid var(--navy-light);
       }
 
@@ -325,7 +325,7 @@
         background: var(--white);
         border-radius: 15px;
         overflow: hidden;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid #b7b7b7;
         transition: transform 0.3s ease;
       }
 
@@ -408,6 +408,7 @@
       .contact {
         background: var(--navy-dark);
         color: var(--white);
+        min-height: auto;
       }
 
       .contact-content {
@@ -501,7 +502,7 @@
         border-radius: 15px;
         padding: 2rem;
         text-align: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: 1px solid #b7b7b7;
         transition: transform 0.3s ease;
         user-select: none;
         flex-shrink: 0;
@@ -973,57 +974,31 @@
         </p>
 
         <div
-          class="contact-content"
           style="
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 3rem;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
           "
         >
-          <div class="contact-info" style="max-width: 600px">
-            <h3>Contact Information</h3>
-            <p
-              style="
-                color: rgba(255, 255, 255, 0.9);
-                font-size: 1.1rem;
-                margin-bottom: 2rem;
-              "
-            >
-              Whether you have questions about our programs, want to learn more
-              about our approach, or are ready to get started, we'd love to
-              connect with you.
-            </p>
-            <div class="contact-item">
-              <span>Email:</span>
-              <span>hello@edunautics.com</span>
-            </div>
-            <div class="contact-item">
-              <span>Phone:</span>
-              <span>+1 (555) 123-4567</span>
-            </div>
-            <div class="contact-item">
-              <span>Address:</span>
-              <span>Innovation District, Tech City</span>
-            </div>
-            <div class="contact-item">
-              <span>Hours:</span>
-              <span>Mon-Fri: 9AM-6PM</span>
-            </div>
-          </div>
-
-          <div
+          <a
+            href="contact.html"
+            class="btn btn-primary"
             style="
-              display: flex;
-              gap: 1rem;
-              flex-wrap: wrap;
-              justify-content: center;
+              font-family: 'The Seasons', -apple-system, BlinkMacSystemFont,
+                'Segoe UI', Roboto, sans-serif;
             "
+            >Contact Us</a
           >
-            <a href="contact.html" class="btn btn-primary">Contact Us</a>
-            <a href="#programs" class="btn btn-secondary">View Programs</a>
-          </div>
+          <a
+            href="#programs"
+            class="btn btn-secondary"
+            style="
+              font-family: 'The Seasons', -apple-system, BlinkMacSystemFont,
+                'Segoe UI', Roboto, sans-serif;
+            "
+            >View Programs</a
+          >
         </div>
       </div>
     </section>
